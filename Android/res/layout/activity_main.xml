@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+    <com.hci.project.malayalamtutions.views.DrawView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/draw"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/typer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="75sp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:text="KA"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:textSize="25sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check"
+            android:textSize="25sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
